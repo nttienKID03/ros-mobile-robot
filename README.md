@@ -40,7 +40,7 @@ Gazebo + RViz
 ```bash
 catkin build
 source devel/setup.bash
-roslaunch mobile nav2.launch
+roslaunch mobile move_base.launch
 ```
 
 ![z7592480760724_782c67b5b85e69946a96587810b7c8fa](https://github.com/user-attachments/assets/a3f0c3b5-cc5c-4765-b17e-283b071e3138)
