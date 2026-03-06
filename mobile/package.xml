@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mobile</name>
+  <version>1.0.0</version>
+  <description>
+    <p>URDF Description package for mobile</p>
+    <p>This package contains configuration data, 3D models and launch files
+for mobile robot</p>
+  </description>
+  <author>TanTien</author>
+  <maintainer email="nguyentantien14012003@email.com" />
+  <license>BSD</license>
+  
+  <!-- Công cụ build -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Các thư viện ROS cần thiết -->
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  <depend>roslaunch</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>rviz</depend>
+  <depend>joint_state_publisher</depend>  
+  <depend>joint_state_publisher_gui</depend>
+  <depend>gazebo_ros</depend>  <!-- Sửa lại từ "gazebo" -->
+  
+  <!-- Các package liên quan đến điều khiển -->
+  <depend>gazebo_ros_control</depend>
+  <depend>controller_manager</depend>
+  <depend>diff_drive_controller</depend>
+  <depend>gazebo_plugins</depend>  <!-- Để sử dụng cảm biến Lidar -->
+
+  <!-- Nếu package cần sinh message mới -->
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>

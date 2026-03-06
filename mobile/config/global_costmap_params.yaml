@@ -1,0 +1,20 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_footprint
+  update_frequency: 5.0
+  publish_frequency: 2.0
+  static_map: true
+
+  plugins:
+    - {name: static_layer, type: "costmap_2d::StaticLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+
+inflation_layer:
+  enabled: true
+  inflation_radius: 0.02  # 🚀 Giảm từ 0.5 xuống 0.3 để thu hẹp vùng xám
+  cost_scaling_factor: 5.0  # 🚀 Tăng từ 10.0 lên 20.0 để làm sắc nét hơn
+
+obstacle_layer:
+  enabled: true
+  observation_sources: laser_scan_sensor
+  laser_scan_sensor: {sensor_frame: laser, data_type: LaserScan, topic: /scan, marking: true, clearing: true}
