@@ -19,7 +19,7 @@ ROS nodes:
 
 - robot_state_publisher
 - controller_node
-- slam_toolbox
+- catographer
 - navigation_stack
 
 Extended Kalman Filter - EKF
