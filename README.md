@@ -9,7 +9,7 @@ My Project: https://youtu.be/UYOfr4wLCoU
 - Differential drive robot
 - SLAM mapping
 - AMCL localization
-- Navigation using Move_base
+- Navigation using DWA and A*
 - Simulation in Gazebo
 - Visualization in RViz
 
